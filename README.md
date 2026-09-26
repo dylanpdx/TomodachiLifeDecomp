@@ -6,7 +6,9 @@ You must provide your own legally obtained copy of Tomodachi Life.
 
 ## Progress
 
-WIP
+<img src ="https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/dylanpdx/TomodachiLifeDecomp/master/Data/Code.json&style=flat-square"/> <img src ="https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/dylanpdx/TomodachiLifeDecomp/master/Data/Total.json&style=flat-square"/>
+
+<img src ="https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/dylanpdx/TomodachiLifeDecomp/master/Data/OK.json&style=flat-square"/> <img src ="https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/dylanpdx/TomodachiLifeDecomp/master/Data/NonMatching.json&style=flat-square"/>
 
 ## Prerequisites
 
