@@ -1,0 +1,13 @@
+Build/
+__pycache__/
+.cache/
+.vscode/
+venv/
+
+code.bin
+extheader.bin
+compile_commands.json
+.env
+
+*.ps1
+*.exe
