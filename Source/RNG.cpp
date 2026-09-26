@@ -33,13 +33,3 @@ extern "C" unsigned int GetRandomNumberBasedOnRange(unsigned long long *buf, int
     
     return rand;
 }
-
-extern "C" unsigned int GetRandomNumberBasedOnRange2(unsigned long long *buf, int target, int length) {
-    // same as above
-    unsigned long long random = CalculateRandomNumber(*buf); 
-    unsigned int rand = 0;
-    
-    rand = target + ((random >> 32) * (length - target));
-    
-    return rand;
-}
