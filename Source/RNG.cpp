@@ -1,5 +1,6 @@
-#define RNG_Seed1 7567025607324980273
-#define RNG_Seed2 5279421
+#include "RNG.h"
+
+unsigned long long RNG_STATE = 0;
 
 static unsigned long long CalculateRandomNumber(unsigned long long input) {
     return RNG_Seed1 * input + RNG_Seed2;
@@ -30,6 +31,17 @@ extern "C" unsigned int GetRandomNumberBasedOnRange(unsigned long long *buf, int
     // rand += denominator
     
     rand = target + ((random >> 32) * (length - target));
-    
+
     return rand;
+}
+
+extern "C" unsigned int GetRandomNumber(unsigned long long *buf, int range) {
+    unsigned long long random = CalculateRandomNumber(*buf); 
+    unsigned int rand = 0;
+
+    *buf = random;
+
+    rand = (unsigned int)(rand >> 32);
+
+    return (unsigned int)(((unsigned long long)range * rand) >> 32);
 }
