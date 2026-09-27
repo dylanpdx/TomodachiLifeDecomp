@@ -52,6 +52,6 @@ void add_placeholder_text(short* out,int pos,int syllables){
                 break;
             }
         }
-        done:
-        wstrncat_b(out, pos,SPACE, 1);
-    }
+    done:
+    wstrncat_b(out, pos,SPACE, 1);
+}
