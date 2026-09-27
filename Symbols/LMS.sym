@@ -1,0 +1,4 @@
+LMS_InitMessage,00310c38,120,U
+LMSi_SearchBlockByName,00310fe8,104,U
+LMSi_AnalyzeMessageBinary,00310e60,260,U
+LMSi_MemCmp,001625d8,144,U
